@@ -13,11 +13,11 @@ public class RegexRunner {
 
 	public static void main(String[] args) {
 
-		String lastNamePattern = "^[A-Z][a-zA-Z]{3,}$";
+		String emailPattern = "[a-zA-Z]+([_+-.][a-zA-Z])*[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2})*$";
 
-		String input = "Kumar";
+		String input = "abc@bl.co";
 
-		 System.out.println(validate(lastNamePattern, input));
+		 System.out.println(validate(emailPattern, input));
 
 	}
 
