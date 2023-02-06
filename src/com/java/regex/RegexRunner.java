@@ -13,11 +13,11 @@ public class RegexRunner {
 
 	public static void main(String[] args) {
 
-		String firstNamePattern = "^[A-Z][a-zA-Z]{3,}$";
+		String lastNamePattern = "^[A-Z][a-zA-Z]{3,}$";
 
-		String input = "Devraj";
+		String input = "Kumar";
 
-		 System.out.println(validate(firstNamePattern, input));
+		 System.out.println(validate(lastNamePattern, input));
 
 	}
 
