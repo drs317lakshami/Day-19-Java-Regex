@@ -37,7 +37,7 @@ public class UserRegistration {
 	}
 	
 	private void validatePassword(String input) {
-		String password = "^(?=.*[A-Z])[0-9a-zA-Z]{8,}$";
+		String password = "^[A-Z]{1}[0-9a-zA-Z]{7,}$";
 		
 		System.out.println("\nValidating Password...");
 		match(password, input);
@@ -45,7 +45,7 @@ public class UserRegistration {
 
 	public void validateMobileNumber(String input) {
 
-		String mobile = "^[0-9]{2}\\s[0-9]{10}$";
+		String mobile = "^(91)( )[6-9]{1}[0-9]{9}$";
 
 		System.out.println("\nValidating Mobile Number...");
 		match(mobile, input);
