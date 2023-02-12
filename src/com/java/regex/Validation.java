@@ -86,7 +86,7 @@ public class Validation {
         }
     }
     public void checkPasswordRule4() {
-        System.out.println("-------Password Rule3------");
+        System.out.println("-------Password Rule4------");
         System.out.println("Enter Password : ");
         String password  = sc.nextLine();
         if (Pattern.matches("^[A-Z]+[A-Za-z0-9]{7,}[!@#$%^&*()=]+",password)) {
@@ -96,4 +96,16 @@ public class Validation {
             checkPasswordRule4();
         }
     }
+    public void checkEmail2() {
+        System.out.println("--------Email Check2-------");
+        System.out.println("Enter Email : ");
+        String email = sc.nextLine();
+        if (Pattern.matches("^[a-zA-Z]{3,}[+-.]?[A-za-z0-9]*[@]{1}[a-z]+[.]?[a-z]*[.]?[a-z]", email)) {
+            System.out.println("Email is Valid");
+        } else {
+            System.out.println("Email is Invalid");
+            checkEmail2();
+        }
+    }
+
 }
